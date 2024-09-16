@@ -9,9 +9,13 @@ spring:
           uri: https://github.com/soknem/config-server
           clone-on-start: true
           search-paths: '{application}'
+    #          search-paths:
 #            - config-repo
+#          default-label: main
     bus:
       enabled: true
+      refresh:
+        enabled: true
   kafka:
     bootstrap-servers:
       - http://68.183.225.48:9092
@@ -25,3 +29,7 @@ management:
       show-details: always
 server:
   port: 8888
+
+logging:
+  level:
+    org.springframework.cloud.config: DEBUG
