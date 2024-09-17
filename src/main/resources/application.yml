@@ -9,6 +9,8 @@ spring:
           uri: https://github.com/soknem/config-server
           clone-on-start: true
           search-paths: '{application}'
+#          username: soknem
+#          password:
     #          search-paths:
 #            - config-repo
 #          default-label: main
